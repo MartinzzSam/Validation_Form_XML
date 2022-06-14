@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="295dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="108dp"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="295dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:hint="Password"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailError"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/etRepeatPassword"
+            android:layout_width="295dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:hint="RepeatPassword"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPasswordError"
+            app:layout_constraintStart_toStartOf="@+id/tvPasswordError"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasswordError"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepeatPassword" />
+
+        <TextView
+            android:id="@+id/tvEmailError"
+            android:layout_width="295dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/etEmail"
+            app:layout_constraintStart_toStartOf="@+id/etEmail"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <TextView
+            android:id="@+id/tvPasswordError"
+            android:layout_width="295dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/etPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <TextView
+            android:id="@+id/tvRepeatPassword"
+            android:layout_width="295dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/etRepeatPassword"
+            app:layout_constraintStart_toStartOf="@+id/etRepeatPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etRepeatPassword" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
