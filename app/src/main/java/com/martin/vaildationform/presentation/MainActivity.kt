@@ -106,10 +106,13 @@ class MainActivity : AppCompatActivity() {
   private  fun getValidationError() {
      lifecycleScope.launchWhenStarted {
          viewModel.state.collectLatest { data ->
+             binding.etEmail.error = data.emailError
              binding.tvEmailError.text = data.emailError
              binding.tvEmailError.setBackgroundColor(data.emailErrorColor)
+             binding.etPassword.error = data.passwordError
              binding.tvPasswordError.text = data.passwordError
              binding.tvPasswordError.setBackgroundColor(data.passwordErrorColor)
+             binding.etRepeatPassword.error = data.repeatedPasswordError
              binding.tvRepeatPassword.text = data.repeatedPasswordError
              binding.tvRepeatPassword.setBackgroundColor(data.repeatedPasswordErrorColor)
          }

@@ -30,9 +30,6 @@ class MainViewModel(
 
 
 
-    init {
-
-    }
 
    fun onEvent(event : RegistrationFormEvent) {
     when (event) {
